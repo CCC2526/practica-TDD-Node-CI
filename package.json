@@ -1,0 +1,24 @@
+{
+  "name": "practica-tdd-node-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCC2526/practica-TDD-Node-CI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/CCC2526/practica-TDD-Node-CI/issues"
+  },
+  "homepage": "https://github.com/CCC2526/practica-TDD-Node-CI#readme",
+  "devDependencies": {
+    "vitest": "^5.0.5"
+  }
+}
