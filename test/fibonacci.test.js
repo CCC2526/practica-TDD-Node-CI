@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { fibonacci } from '../ implementacion/fibonacci.js';
+import { fibonacci } from '../implementacion/fibonacci.js';
 
 describe('fibonacci(n)', () => {
   it('devuelve 0 para n = 0', () => {
