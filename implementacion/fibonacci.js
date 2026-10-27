@@ -1,9 +1,16 @@
+const MENSAJE_ERROR = 'solo números enteros ≥ 0';
+
 export function fibonacci(n) {
   if (!Number.isInteger(n) || n < 0) {
-    throw new RangeError('solo números enteros ≥ 0');
+    throw new RangeError(MENSAJE_ERROR);
   }
-  if (n === 0) return 0;
-  if (n === 1) return 1;
 
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  let anterior = 0;
+  let actual = 1;
+
+  for (let i = 0; i < n; i++) {
+    [anterior, actual] = [actual, anterior + actual];
+  }
+
+  return anterior;
 }
