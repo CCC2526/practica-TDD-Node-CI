@@ -1,9 +1,9 @@
+const LONGITUDES_VALIDAS = [4, 6];
+const SOLO_DIGITOS = /^[0-9]+$/;
+
 export function esPinValido(pin) {
-  if (pin === null || pin === undefined) return false;
   if (typeof pin !== 'string') return false;
-  if (pin === '') return false;
-  if (pin.length !== 4 && pin.length !== 6) return false;
-  if (!/^[0-9]+$/.test(pin)) return false;
-  if (new Set(pin).size === 1) return false;
-  return true;
+  if (!LONGITUDES_VALIDAS.includes(pin.length)) return false;
+  if (!SOLO_DIGITOS.test(pin)) return false;
+  return new Set(pin).size > 1;
 }
